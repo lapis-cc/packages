@@ -10,6 +10,6 @@ pkg.file_mappings = {
   ["cash.lua"] = "init.lua",
 }
 
-pkg.install_to = require("lapis.dirs").applications .. "cash"
+pkg.install_to = require("lapis.dirs").application("cash")
 
 return pkg
