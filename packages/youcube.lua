@@ -11,10 +11,10 @@ pkg.ignored_paths = {
 }
 
 pkg.ignored_patterns = {
-  "^.README/",
-  "^.devcontainer/",
-  "^.github/",
-  "^.vscode/",
+  "^%.README/",
+  "^%.devcontainer/",
+  "^%.github/",
+  "^%.vscode/",
 }
 
 pkg.file_mappings = {
