@@ -3,21 +3,18 @@ local pkg = require("lapis.pkg.builder").fromGithub("CC-YouCube", "client",
 
 pkg.ignored_paths = {
   "README.md",
-  ".README/levelos.png",
-  ".README/plus.svg",
-  ".README/preview-client.png",
-  ".README/slash.svg",
-  ".devcontainer/devcontainer.json",
-  ".github/workflows/deploy-page.yml",
-  ".github/workflows/illuaminate-lint.yml",
-  ".github/workflows/lstore-put.yml",
-  ".vscode/extensions.json",
-  ".vscode/settings.json",
   ".gitignore",
   "LICENSE.txt",
   "Makefile",
   "stylua.toml",
   "illuaminate.sexp",
+}
+
+pkg.ignored_patterns = {
+  "^.README/",
+  "^.devcontainer/",
+  "^.github/",
+  "^.vscode/",
 }
 
 pkg.file_mappings = {
