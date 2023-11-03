@@ -1,4 +1,4 @@
-local pkg = require("lapis.packages.builder").fromGithub("CC-YouCube", "client",
+local pkg = require("lapis.pkg.builder").fromGithub("CC-YouCube", "client",
   "b69b2795f1b063b1b6c644a965f410d6152bfba1")
 
 pkg.ignored_paths = {

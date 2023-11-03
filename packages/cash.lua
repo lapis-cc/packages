@@ -1,4 +1,4 @@
-local pkg = require("lapis.packages.builder").fromGithub("MCJack123", "cash", "a8542356efcbcce527e8fa6f52d155cd71b7667d")
+local pkg = require("lapis.pkg.builder").fromGithub("MCJack123", "cash", "a8542356efcbcce527e8fa6f52d155cd71b7667d")
 
 pkg.ignored_paths = {
   "README.md",
