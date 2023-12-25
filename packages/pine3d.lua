@@ -1,17 +1,17 @@
-local pkg = require("lapis.pkg.builder").fromGithub("Xella37", "Pine3D", "e76dfff9df954383fbe90df486039db4127af161")
+local pkg = require("lapis.pkg.builder").fromGithub("Xella37", "Pine3D", "d1db5f811577d71de9bc60cf76eefe303f6cdb06")
 
 pkg.ignored_paths = {
-  "Mountains.lua",
-  "README.md",
-  "LICENSE",
+	"Mountains.lua",
+	"README.md",
+	"LICENSE",
 }
 
 pkg.ignored_patterns = {
-  "^%.vscode/",
+	"^%.vscode/",
 }
 
 pkg.file_mappings = {
-  ["Pine3D.lua"] = "init.lua",
+	["Pine3D.lua"] = "init.lua",
 }
 
 pkg.install_to = require("lapis.dirs").library("Pine3D")
