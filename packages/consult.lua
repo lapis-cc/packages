@@ -9,7 +9,7 @@ pkg.wrappers = {
 pkg.install_to = require("lapis.dirs").applications
 
 pkg.post_install = function(files)
-	files["cosu.lua"] = 'require("lapis.compat.craftos").call(function()\n' .. files["cosu.lua"] .. "\nend)"
+	files["cosu.lua"] = 'require("lapis.compat.craftos").call(function(...)\n' .. files["cosu.lua"] .. "\nend, ...)"
 end
 
 return pkg
