@@ -3,7 +3,6 @@ return {
   ignored_paths = {
     "Mountains.lua",
     "README.md",
-    "LICENSE",
   },
   ignored_patterns = {
     "^%.vscode/",

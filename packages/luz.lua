@@ -1,7 +1,6 @@
 return {
   src = pkgs.fromGithub("MCJack123", "Luz", "lz77-deflate-identifiers"),
   ignored_paths = {
-    "LICENSE",
     "README.md",
   },
   file_mappings = {
