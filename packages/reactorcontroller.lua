@@ -9,12 +9,15 @@ return {
   },
   install_to = "/apps/reactorcontroller/",
   entrypoint = "init.lua",
-  post_install = function(spec)
-    local f = fs.open(spec.install_to .. spec.entrypoint, "r")
-    local contents = f.readAll()
-    f.close()
+  compat = "craftos",
+  post_fetch = function(spec, path, contents)
+    if path ~= spec.entrypoint then
+      return
+    end
 
-    contents = 'local touchpoint = require("apps.reactorcontroller.lib.touchpoint")\n' -- TODO: Fix when local require works in all contexts
+    local ret = 'local touchpoint = require("apps.reactorcontroller.lib.touchpoint")\n' -- TODO: Fix when local require works in all contexts
       .. string.gsub(contents, 'os%.loadAPI%("/usr/apis/touchpoint%.lua"%)', "")
+
+    return ret
   end,
 }
