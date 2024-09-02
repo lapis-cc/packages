@@ -3,5 +3,6 @@ return {
   path_mappings = {
     ["2ZrbnH5w"] = "draconiccontrol.lua",
   },
+  entrypoint = "draconiccontrol.lua",
   install_to = "/apps/",
 }

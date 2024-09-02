@@ -5,8 +5,9 @@ return {
       require("lp.compat.craftos").call,
     },
   },
-  post_install = function(files)
+  post_install = function(spec, files)
     files["cosu.lua"] = 'require("lapis.compat.craftos").call(function(...)\n' .. files["cosu.lua"] .. "\nend, ...)"
   end,
+  entrypoint = "cosu.lua",
   install_to = "/apps/",
 }

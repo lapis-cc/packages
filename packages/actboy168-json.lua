@@ -15,4 +15,5 @@ return {
     ".gitmodules",
   },
   install_to = "/lib/jsonlua/",
+  entrypoint = "init.lua",
 }

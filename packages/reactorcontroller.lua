@@ -7,9 +7,10 @@ return {
   path_mappings = {
     ["reactorController.lua"] = "init.lua",
   },
-  install_to = "/apps/reactorcontroller",
+  install_to = "/apps/reactorcontroller/",
+  entrypoint = "init.lua",
   post_install = function(spec)
-    local f = fs.open(spec.install_to, "r")
+    local f = fs.open(spec.install_to .. spec.entrypoint, "r")
     local contents = f.readAll()
     f.close()
 

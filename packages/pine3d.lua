@@ -11,4 +11,5 @@ return {
     ["Pine3D.lua"] = "init.lua",
   },
   install_to = "/lib/Pine3D",
+  entrypoint = "init.lua",
 }

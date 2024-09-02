@@ -3,4 +3,5 @@ return {
   ignored_paths = { "README.md" },
   file_mappings = { ["Doom.lua"] = "init.lua" },
   install_to = "/apps/CCDoom",
+  entrypoint = "init.lua",
 }

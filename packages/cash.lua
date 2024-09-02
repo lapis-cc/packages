@@ -9,4 +9,5 @@ return {
     ["cash.lua"] = "init.lua",
   },
   install_to = "/apps/cash/",
+  entrypoint = "init.lua",
 }

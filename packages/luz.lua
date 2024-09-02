@@ -7,4 +7,5 @@ return {
     ["luz.lua"] = "init.lua",
   },
   install_to = "/apps/luz/",
+  entrypoint = "init.lua",
 }
