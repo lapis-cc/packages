@@ -16,6 +16,7 @@ return {
   },
   ignored_patterns = {
     "^example.*%.lua",
+    "^people.*%.lua",
     "^spec/.*",
     "^%.github/.*",
   },
